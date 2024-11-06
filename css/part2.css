@@ -1,0 +1,123 @@
+body{
+  background-color: #000000;
+  min-width: 480px;
+}
+
+.main {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1920px;
+}
+
+.animation{
+  position: relative;
+  width: 100%;
+}
+
+.animation video{
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+.some-text{
+  position: absolute;
+  z-index: 2;
+  font-size: 123px;
+  font-weight: bold;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.some-text span{
+  margin: 0;
+  padding: 11px 18px;
+}
+
+.line{
+  display: flex;
+}
+
+.window{
+  flex-grow: 2;
+  border: 30px solid #000000;
+}
+
+.text-left{
+  background-color: #000000;
+  text-align: left;
+}
+
+.text-right{
+  background-color: #000000;
+  text-align: right;
+}
+
+
+@media screen and (max-width: 1700px) {
+  .some-text{
+    font-size: 100px;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .some-text{
+    font-size: 90px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .some-text{
+    font-size: 80px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .some-text{
+    font-size: 70px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .some-text{
+    font-size: 60px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .some-text{
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+
+  .animation video {
+    height: 100%;
+  }
+
+  .some-text{
+    font-size: 40px;
+  }
+
+  .window{
+    flex-grow: 1;
+  }
+
+  .line{
+    flex-wrap: wrap;
+  }
+
+
+}
+
+@media screen and (max-width: 600px) {
+
+  .some-text{
+    font-size: 25px;
+  }
+
+
+}
+
